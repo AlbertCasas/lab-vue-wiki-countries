@@ -43,7 +43,7 @@ export default {
       area: "",
       borders: [],
       alpha2Code: "",
-      countryIn: {},
+      countryIn: null,
       
     };
   },

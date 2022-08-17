@@ -1,5 +1,6 @@
 <template>
-  <NavBar />
+  <div>
+    <NavBar />
   <div class="container">
     <h1 class="text-center my-4 ">Country List</h1>
     <div v-if="this.countries" class="row">
@@ -25,11 +26,12 @@
           <router-view />
       </div>
     </div>
-    <div v-else class="row">
-      <Spinner text="Loading Countries" />
-    </div>
+  
+    <Spinner text="Loading Countries" v-else />
+    
   </div>
 
+  </div>
  
 </template>
 
